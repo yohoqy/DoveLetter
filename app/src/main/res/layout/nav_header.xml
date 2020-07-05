@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="250dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/host_photo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/avator" />
+
+    <TextView
+        android:id="@+id/host_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="8dp"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:text="yohoqy"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/host_photo"/>
+
+    <TextView
+        android:id="@+id/tv_hostaddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textColor="#808080"
+        android:layout_below="@id/host_name"
+        android:layout_centerHorizontal="true"
+        android:text="example@qq.com"/>
+
+</RelativeLayout>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.LoginActivity"
+    android:background="@color/colorWhite">
+
+    <ImageView
+        android:id="@+id/iv_icon"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="100dp"
+        android:src="@drawable/icon"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/app_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DoveLetter"
+        android:layout_below="@id/iv_icon"
+        android:layout_marginTop="15dp"
+        android:textSize="25sp"
+        android:textColor="#12b3a5"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"/>
+
+    <EditText
+        android:id="@+id/et_address"
+        android:layout_width="330dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/app_name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="90dp"
+        android:textColorHint="#9b9b9b"
+        android:hint="  Email"
+        android:textColor="#12b3a5"
+        android:drawableLeft="@drawable/ic_mail"
+        android:background="@drawable/round_shape"
+        android:text="1315603052@qq.com"
+        />
+
+
+    <EditText
+        android:id="@+id/et_password"
+        android:layout_width="330dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/et_address"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textColorHint="#9b9b9b"
+        android:hint="  Password"
+        android:textColor="#12b3a5"
+        android:inputType="textPassword"
+        android:drawableLeft="@drawable/ic_lock_open"
+        android:background="@drawable/round_shape"
+        android:text="hasmlbfzovubjjaf"
+        />
+
+    <CheckBox
+        android:id="@+id/cb_remember"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_password"
+        android:text="记住密码"
+        android:textColor="#9b9b9b"
+        android:layout_alignStart="@id/et_password"
+        android:layout_marginTop="7dp"/>
+
+
+    <CheckBox
+        android:id="@+id/cb_autologin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_password"
+        android:text="自动登录"
+        android:textColor="#9b9b9b"
+        android:layout_alignEnd="@id/et_password"
+        android:layout_marginTop="7dp"/>
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="310dp"
+        android:layout_height="55dp"
+        android:layout_below="@id/et_password"
+        android:layout_marginTop="60dp"
+        android:text="登录"
+        android:textColor="#12b3a5"
+        android:textSize="23sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/round_shape1" />
+
+
+</RelativeLayout>
